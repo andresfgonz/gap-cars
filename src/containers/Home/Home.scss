@@ -1,0 +1,23 @@
+@import "~@stylesheets/variables";
+
+.home-container{
+  position: relative;
+  grid-area: content;
+  background-color: $contentBackgroundColor;
+  padding: 20px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  .cars-list-container{
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+  }
+
+  @media screen and(max-width: 767px) {
+    padding: 5px;
+    .cars-list-container{
+      text-align: center;
+    }
+  }
+}

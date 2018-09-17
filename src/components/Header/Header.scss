@@ -1,0 +1,45 @@
+@import "~@stylesheets/variables";
+
+.app-header {
+  background-color: $darkColor;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  .leftSection{
+    position: absolute;
+    left: 10px;
+    display: none;
+    align-items: center;
+    .menu-icon{
+      width: 20px;
+      height: 20px;
+      color: white;
+    }
+  }
+  .title-container{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    .app-logo{
+      width: 22px;
+      height: 22px;
+      color: white;
+      margin-right: 5px;
+    }
+    .app-title {
+      font-size: 15px;
+      text-shadow: 2px 2px black;
+      font-family: Font-Medium, sans-serif;
+      color: #ffffff;
+      letter-spacing: 2px;
+    }
+  }
+
+  @media screen and (max-width: 1199px){
+    .leftSection{
+      display: flex;
+    }
+  }
+}

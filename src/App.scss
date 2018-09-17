@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+}
+
+.app-container {
+  overflow: hidden;
+  height: 100%;
+  display: grid;
+  grid-template-areas: "header content" "side content";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 50px 1fr;
+
+  @media screen and (max-width: 1199px){
+    grid-template-areas: "header" "content";
+    grid-template-columns: 1fr;
+  }
+
+  .app-header{
+    grid-area: header;
+  }
+  .app-menu{
+    grid-area: side;
+  }
+
+  .content{
+    grid-area: content;
+  }
+}
+
+@font-face {
+  font-family: Font-Regular;
+  src: url("./assets/fonts/Montserrat-Regular.ttf");
+}
+
+@font-face {
+  font-family: Font-Light;
+  src: url("./assets/fonts/Montserrat-Light.ttf");
+}
+
+@font-face {
+  font-family: Font-Medium;
+  src: url("./assets/fonts/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: Font-Bold;
+  src: url("./assets/fonts/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: Font-Script;
+  src: url("./assets/fonts/KaushanScript-Regular.ttf");
+}

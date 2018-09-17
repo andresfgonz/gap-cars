@@ -1,0 +1,56 @@
+@import "~@stylesheets/mixins";
+
+.add-car-box{
+  cursor: pointer;
+  position: relative;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 3px;
+  z-index: 1;
+  .car-image{
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkyXUQcQS9ZE94PSF-4LYhC6YP95bgtTxwxAulv_z5B8X1xc8d");
+  }
+  .car-text{
+    font-family: Font-Medium, sans-serif;
+    text-align: center;
+  }
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  &.hover-box{
+    box-shadow: 1px 1px 5px #e2e2e2;
+    &:hover{
+      @include scale-on-hover(1.03);
+    }
+  }
+
+  @media screen and (max-width: 767.98px){
+    position: static;
+    .car-image{
+      width: 70px;
+      height: 70px;
+    }
+    .add-car-form{
+      bottom: 1px;
+      left: 3px;
+      width: auto;
+      right: 3px;
+
+    }
+  }
+}
+
+

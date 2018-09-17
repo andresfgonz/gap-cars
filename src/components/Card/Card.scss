@@ -1,0 +1,23 @@
+.card-container{
+  width: fit-content;
+  background-color: #fff;
+  box-shadow: 1px 1px 15px 3px #e2e2e2;
+  border-radius: 3px;
+}
+
+.card-container:hover{
+  transform: scale(1.03);
+  box-shadow: 1px 1px 15px 3px #e2e2e2, 0 19px 10px -17px #3c3c3c;
+  animation: hover-card 0.2s ease;
+}
+
+@keyframes hover-card {
+  from{
+    transform: scale(1);
+    box-shadow: 1px 1px 15px 3px #e2e2e2;
+  }
+  to{
+    transform: scale(1.03);
+    box-shadow: 1px 1px 15px 3px #e2e2e2, 0 19px 10px -17px #3c3c3c;
+  }
+}

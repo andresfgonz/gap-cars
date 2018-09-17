@@ -1,0 +1,45 @@
+.car-list-item{
+  width: 300px;
+  height: 120px;
+  padding: 10px;
+  display: flex;
+  position: relative;
+  .car-image{
+    width: 130px;
+    height: 100px;
+    align-self: center;
+    border-radius: 3px;
+    background-size: cover;
+    background-position: center;
+  }
+  .car-description{
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .car-name{
+      font-family: Font-Regular, sans-serif;
+      font-size: 16px;
+    }
+    .car-line{
+      font-family: Font-Bold, sans-serif;
+      font-size: 16px;
+    }
+    .car-price{
+      font-family: Font-Medium, sans-serif;
+      font-size: 20px;
+      color: #137eff;
+    }
+    .car-year{
+      font-family: Font-Light, sans-serif;
+      font-size: 16px;
+      color: #777777;
+    }
+    .brand-logo{
+      position: absolute;
+      right: 5px;
+      top: 5px;
+    }
+  }
+}

@@ -1,0 +1,56 @@
+.app-menu{
+  z-index: 10;
+  background-color: #233242;
+  padding-top: 40px;
+  .menu-links{
+    width: 340px;
+    display: flex;
+    justify-content: space-between;
+    .menu-link{
+      display: flex;
+      align-items: center;
+    }
+  }
+  .nav-link{
+    text-decoration: none;
+    color: #fff;
+    font-family: Font-Light, sans-serif;
+    font-size: 15px;
+    text-shadow: 1px 1px 5px black;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0 15px;
+    &.active-link{
+      background-color: #202d3b;
+      box-shadow: inset 3px 0 0 #137eff;
+    }
+  }
+  .nav-link-icon{
+    color: #ffffff;
+    margin-right: 5px;
+    text-shadow: 2px 2px black;
+  }
+
+  @media screen and (max-width: 1199px){
+
+    &.visible-menu {
+      transform: translateX(0);
+      animation: appear 0.3s ease-out;
+    }
+
+    transform: translateX(-100%);
+    padding-top: 10px;
+    width: 250px;
+    position: absolute;
+    bottom: 0;
+    top: 50px;
+  }
+
+
+}
+
+@keyframes appear {
+  from{transform: translateX(-100%);}
+  to{ transform: translateX(0);}
+}

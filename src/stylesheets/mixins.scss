@@ -1,0 +1,16 @@
+@mixin scale-on-hover($scaleAmount){
+  transform: scale($scaleAmount);
+  box-shadow: 1px 1px 15px 3px #e2e2e2, 0 19px 10px -17px #3c3c3c;
+  animation: scale-element 0.2s ease;
+
+  @keyframes scale-element {
+    from{
+      transform: scale(1);
+      box-shadow: 1px 1px 15px 3px #e2e2e2;
+    }
+    to{
+      transform: scale($scaleAmount);
+      box-shadow: 1px 1px 15px 3px #e2e2e2, 0 19px 10px -17px #3c3c3c;
+    }
+  }
+}
